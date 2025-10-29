@@ -1253,3 +1253,141 @@ section {
     .cute-planet:nth-child(6) { --orbit: 100px; }
     .cute-planet:nth-child(7) { --orbit: 115px; }
 }
+
+
+
+
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        text-align: center;
+        padding: 0 15px;
+        height: 1100px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+        padding: 12px 24px;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .stat {
+        min-width: 80px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    /* Solar System Mobile Fix */
+    .cute-solar-system {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    
+    .cute-sun {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .cute-sun-face {
+        font-size: 0.9rem;
+    }
+    
+    .cute-planet-logo {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    
+    /* Adjust orbits for mobile */
+    .cute-planet:nth-child(2) { --orbit: 35px; }
+    .cute-planet:nth-child(3) { --orbit: 50px; }
+    .cute-planet:nth-child(4) { --orbit: 65px; }
+    .cute-planet:nth-child(5) { --orbit: 80px; }
+    .cute-planet:nth-child(6) { --orbit: 95px; }
+    .cute-planet:nth-child(7) { --orbit: 110px; }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 0 40px;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-stats {
+        gap: 1rem;
+    }
+    
+    .stat {
+        min-width: 70px;
+    }
+    
+    .stat-number {
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .cute-solar-system {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .cute-planet-logo {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+    }
+}
+
+
